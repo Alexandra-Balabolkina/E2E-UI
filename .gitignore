@@ -8,13 +8,12 @@ chromedriver
 geckodriver
 
 .DS_Store
-Thumbs.db
 
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
 
-*.log
-*.tmp
 
 *.egg-info/
 .eggs/
@@ -22,3 +21,18 @@ dist/
 build/
 
 .pytest_cache/
+.cache/
+
+*.pyc
+*.pyo
+*.pyd
+
+selenium.log
+
+*.log
+*.tmp
+*.swp
+
+.env
+*.env
+Pipfile.lock
