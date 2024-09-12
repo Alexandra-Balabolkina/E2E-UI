@@ -1,10 +1,9 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
-
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from webdriver_manager.firefox import GeckoDriverManager
 
 def get_driver():
-    """Настройка и запуск ChromeDriver с автоматической установкой"""
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+    """Настройка и запуск GeckoDriver для Firefox"""
+    driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
     driver.maximize_window()
     return driver
