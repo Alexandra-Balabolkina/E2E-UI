@@ -35,32 +35,32 @@ E2E-UI/
 └── requirements.txt
 ```
 ## Требования
-- [Python 3.10 или новее](https://www.python.org/downloads/)
-- [Firefox](https://www.mozilla.org/ru/firefox/)
-- Установленные зависимости (Selenium, Pytest, WebDriver Manager)
+- **[Python 3.10 или новее](https://www.python.org/downloads/)**
+- **[Firefox](https://www.mozilla.org/ru/firefox/)**
+- **Установленные зависимости (Selenium, Pytest, WebDriver Manager)**
 
 ## Установка
 
-1. Клонирование репозитория:
+**1. Клонирование репозитория:**
 
-```
+```bash
 git clone <https://github.com/Alexandra-Balabolkina/E2E-UI.git>
 cd E2E-UI
 ```
-2. Создание и активация виртуального окружения:
+**2. Создание и активация виртуального окружения:**
 
-```
+```bash
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 ```
-3. Установка зависимостей:
+**3. Установка зависимостей:**
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
-Если у вас нет файла requirements.txt, вы можете создать его, добавив в него следующие строки:
+Если у вас нет файла **requirements.txt**, вы можете создать его, добавив в него следующие строки:
 
 ```
 selenium
@@ -70,13 +70,13 @@ webdriver-manager
 ## Запуск теста
 Для запуска теста выполните следующую команду:
 
-```
+```bash
 pytest tests/
 ```
 
 Тест автоматически выполнит следующие шаги:
 
-- Авторизуется на сайте saucedemo.com с использованием тестовых учетных данных.
+- Авторизуется на сайте [saucedemo.com](https://www.saucedemo.com) с использованием тестовых учетных данных.
 - Выберет товар и добавит его в корзину.
 - Перейдет к оформлению заказа.
 - Заполнит поля с информацией и завершит покупку.
@@ -84,5 +84,5 @@ pytest tests/
 
 ## Настройка браузера
 **По умолчанию тест использует Firefox.**
-Если вы хотите использовать другой браузер, вам нужно изменить настройки в файле driver_setup.py.
+Если вы хотите использовать другой браузер, вам нужно изменить настройки в файле **driver_setup.py**.
 
