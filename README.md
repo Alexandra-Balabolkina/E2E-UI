@@ -51,9 +51,13 @@ cd E2E-UI
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+venv\Scripts\activate   # Windows
 ```
+```bash
+python3 -m venv venv
+source venv/bin/activate  # Linux/Mac
+```
+
 **3. Установка зависимостей:**
 
 ```bash
